@@ -1,0 +1,171 @@
+:root {
+  --dark: #20232A;
+  --light: #61DAFB;
+}
+
+header {
+  background-color: var(--dark);
+  background: linear-gradient(90deg, rgba(32,35,42,1) 0%, rgba(59,88,110,1) 100%);
+  text-align: center;
+}
+
+header img {
+  width: 100px;
+  margin-top: 20px;
+}
+
+header p {
+  color: var(--light);
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+header p span {
+  /* color: #fff; */
+  animation: blink 2s step-end infinite;
+}
+
+@keyframes blink {  
+  from, to {
+    color: var(--light);
+  }
+  60% {
+    color: #fff;
+  }
+  70% {
+    color: var(--light);
+  }
+  90% {
+    color: #fff;
+  }
+}
+
+header button {
+  border: none;
+  background-color: var(--light);
+  border-radius: 50px;
+  width: 100px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px 20px 0;
+  font-size: 14px;
+  font-weight: bold;
+  transition: all 0.4s;
+  outline: none !important;
+}
+
+.activeButton {
+  background-color: #fff !important;
+}
+
+header button:hover {
+  background-color: #fff;
+  cursor: pointer;
+}
+
+header button img {
+  width: 15px;
+  margin: 0 5px 0 0;
+}
+
+
+
+
+.allPosts {
+  max-width: 900px;
+  display: block;
+  margin: 40px auto;
+}
+
+.topicCard a {
+  text-decoration: none;
+  color: var(--dark);
+  display: flex;
+  align-items: center;
+  min-height: 120px;
+}
+
+.topicCard {
+  padding: 10px;
+  border-bottom: 1px solid var(--light);
+  border-top: 1px solid var(--light);
+  transition: all 0.2s;
+}
+
+.topicCard:hover {
+  background-color: #E7F9FE;
+  transform: scale(1.04);
+}
+
+.topicCard img {
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+  max-height: 100px;
+  margin-right: 10px;
+}
+
+.topicCard h3 {
+  color: var(--dark);
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.topicCard p {
+  font-size: 12px;
+  margin: 0;
+}
+
+.topicCard p span {
+  color: #0F97BC;
+}
+
+.topicCard h6 {
+  font-weight: normal;
+  margin:0;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  width: 40px;
+}
+
+.topicCard h6:hover {
+  text-decoration: underline;
+}
+
+.topicCard h6 img {
+  width: 10px;
+  margin-left: 5px;
+}
+
+
+
+#verMais {
+  display: block;
+  margin: 20px auto 50px auto;
+  width: 200px;
+  max-width: 200px;
+  background-color: transparent;
+  border: 2px solid var(--dark);
+  border-radius: 50px;
+  padding: 10px 5px;
+  font-weight: bold;
+  font-size: 16px;
+  transition: all 0.2s;
+  outline: none !important;
+}
+
+#verMais:hover {
+  cursor: pointer;
+  background-color: var(--dark);
+  color: var(--light)
+}
+
+
+.hide {
+  display: none !important;
+}
