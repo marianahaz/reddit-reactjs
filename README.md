@@ -1,6 +1,6 @@
 ## r/reactjs
 
-A webpage that uses Reddit's API to laod content from r/reactjs.
+A webpage that uses Reddit's API to load content from r/reactjs.
 
 Created for Winnin's Front-End Challenge.
 
